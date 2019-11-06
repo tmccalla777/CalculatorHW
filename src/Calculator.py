@@ -12,6 +12,17 @@ def subtraction(a, b):
     c = b - a
     return c
 
+
+def Division(a, b):
+    a = int(a)
+    b = int(b)
+    c = b / a
+    return c
+
+def Multiplication(a, b):
+    c = a * b
+    return c
+
 class Calculator:
     result = 0
 
@@ -24,4 +35,12 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = Division(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = Multiplication(a, b)
         return self.result
