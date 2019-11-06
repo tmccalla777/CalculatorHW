@@ -1,4 +1,5 @@
 
+from CsvReader import CsvReader
 
 def addition(a, b):
     c = a + b
@@ -6,9 +7,10 @@ def addition(a, b):
 
 
 def subtraction(a, b):
-    c = a - b
+    a = int(a)
+    b = int(b)
+    c = b - a
     return c
-
 
 class Calculator:
     result = 0
