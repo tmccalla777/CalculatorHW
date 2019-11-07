@@ -30,6 +30,12 @@ class MyTestCase(unittest.TestCase):
                     self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), int(row['Result']))
                     self.assertEqual(self.calculator.result, int(row['Result']))
 
+            def test_multiplication(self):
+                test_data = CsvReader('/src/Multiplication.csv').data
+                for row in test_data:
+                    self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), int(row['Result']))
+                    self.assertEqual(self.calculator.result, int(row['Result']))
+
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
 
