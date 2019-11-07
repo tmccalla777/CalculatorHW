@@ -1,3 +1,4 @@
+import math
 
 from CsvReader import CsvReader
 
@@ -25,6 +26,17 @@ def multiplication(a, b):
     c = b * a
     return c
 
+def square_root(a):
+    import math
+    a = int(a)
+    sqrt = math.sqrt(a)
+    return a
+
+def square(a):
+    a = int(a)
+    b = a**2
+    return b
+
 class Calculator:
     result = 0
 
@@ -45,4 +57,8 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def squares(self, a):
+        self.result = square(a)
         return self.result
