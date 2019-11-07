@@ -62,3 +62,7 @@ class Calculator:
     def squares(self, a):
         self.result = square(a)
         return self.result
+
+    def root(self, a):
+        self.result = square_root(a)
+        return self.result
